@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catálogo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Shortcut Icon" type="image/x-icon" href="assets/icons/book.ico" />
+    <script src="js/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="css/sweet-alert.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="navbar-lateral full-reset">
+        <div class="visible-xs font-movile-menu mobile-menu-button"></div>
+        <div class="full-reset container-menu-movile nav-lateral-scroll">
+            <div class="logo full-reset all-tittles">
+                <i class="visible-xs zmdi zmdi-close pull-left mobile-menu-button"
+                    style="line-height: 55px; cursor: pointer; padding: 0 10px; margin-left: 7px;"></i>
+                sistema bibliotecario
+            </div>
+            <div class="nav-lateral-divider full-reset"></div>
+            <div class="full-reset" style="padding: 10px 0; color:#fff;">
+                <figure>
+                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
+                        style="width:55%;">
+                </figure>
+                <p class="text-center" style="padding-top: 15px;">Sistema Bibliotecario</p>
+            </div>
+            <div class="nav-lateral-divider full-reset"></div>
+            <div class="full-reset nav-lateral-list-menu">
+                <ul class="list-unstyled">
+                    <li><a href="catalog.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Inicio</a></li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-case zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Administración <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw icon-sub-menu"></i>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><a href="institution.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp;
+                                    Plantel</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Libros y catálogo <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw icon-sub-menu"></i>
+                        </div>
+                        <ul class="list-unstyled">
+
+                            <li><a href="catalog.html"><i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp;
+                                    Catálogo</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="report.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y
+                            estadísticas</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-page-container full-reset custom-scroll-containers">
+        <nav class="navbar-user-top full-reset">
+            <ul class="list-unstyled full-reset">
+                <figure>
+                    <img src="assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
+                </figure>
+                <li style="color:#fff; cursor:default;">
+                    <span class="all-tittles">Tu cuenta</span>
+                </li>
+                <li class="tooltips-general exit-system-button" data-href="index.html" data-placement="bottom"
+                    title="Salir del sistema">
+                    <i class="zmdi zmdi-power"></i>
+                </li>
+                <li class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
+                    <i class="zmdi zmdi-help-outline zmdi-hc-fw"></i>
+                </li>
+                <li class="mobile-menu-button visible-xs" style="float: left !important;">
+                    <i class="zmdi zmdi-menu"></i>
+                </li>
+                <li class="desktop-menu-button hidden-xs" style="float: left !important;">
+                    <i class="zmdi zmdi-swap"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="all-tittles">Sistema bibliotecario <small>Catálogo de libros</small></h1>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin: 40px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/checklist.png" alt="pdf" class="img-responsive center-box"
+                        style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    Libros y novelas de Cronica
+                </div>
+            </div>
+            <div class="conteiner-fluid">
+                <ul class="nav nav-tabs nav-justified" style="font-size: 17px;">
+                    <li><a href="catalog.html">Completo</a></li>
+                    <li><a href="Terror.html">Terror</a></li>
+                    <li class="active"><a href="comedia.html">Cronica</a></li>
+                    <li><a href="Teatro.html">Teatro</a></li>
+                    <li><a href="Drama.html">Drama</a></li>
+                    <li><a href="Novela.html">Novela</a></li>
+                    <li><a href="Fatasia.html">Fantasía</a></li>
+                    <li><a href="cienciaf.html">Ciencia Ficción</a></li>
+                    <li><a href="articulos.html">Artículo</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Libros-->
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-el-amante-de-lady-chatterley-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Amante de Lady Chatterley</p>
+                        <p>D. H. Lawrence</p>
+                        <p>256</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Inválido de guerra, Sir Clifford Chatterley y su esposa Connie llevan una
+                                existencia acomodada, aparentemente plácida, rodeada de los placeres burgueses de las
+                                reuniones sociales y regida por los correctos términos que deben ser propios de todo
+                                buen matrimonio. Connie, sin embargo, no puede evitar sentir un vacío vital. La
+                                irrupción en su vida de Mellors, el guardabosque de la mansión familiar, la pondrá en
+                                contacto con las energías más primarias e instintivas y relacionadas con la vida. La
+                                fuerte corriente relacionada con la energía sexual que recorre casi toda la obra de D.
+                                H. Lawrence encuentra una de sus máximas expresiones en El amante de Lady Chatterley
+                                novela que se vio envuelta en la polémica y el escándalo desde el momento de su
+                                aparición.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/El Amante de Lady Chatterley - D. H. Lawrence.pdf"
+                                download="El Amante de Lady Chatterley - D. H. Lawrence.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-magnitud-imaginaria1973-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Autodefensa</p>
+                        <p>Jonathan Kellerman </p>
+                        <p>384</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Lucy tiene pesadillas. Seguramente el haber sido jurado en el juicio del
+                                peligroso psicópata ha hecho aflorar viejos terrores. El sueño de Lucy quiere que ella,
+                                aún niña, vea cómo su padre y otros hombres transportan el cuerpo inanimado de una joven
+                                por un bosque. Es el terror desnudo, pero también el terror que provoca quizá un pasado
+                                que no quiere recordar, lo que lleva a Lucy al consultorio del doctor Delaware. Y para
+                                éste es la primera incógnita: ¿el sueño de Lucy es un símbolo onírico o reminiscencia de
+                                un hecho real? Y si fuera lo último, ¿quién era la muchacha, quizá muerta, que
+                                transportaban los hombres? De ese modo Delaware, ayudado por su amigo el detective Milo
+                                Sturgis, comienza a bucear en un pasado en el que la pasión artística, la lujuria más
+                                descarnada y la ambición se conjugan con el desamor.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="./assets/PDF/Autodefensa - Jonathan Kellerman.pdf"
+                                download="Autodefensa - Jonathan Kellerman.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-autodefensa-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Magnitud Imaginaria1973</p>
+                        <p>Stanislaw Lem </p>
+                        <p>86</p>
+                        <dialog id="m3">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Magnitud imaginaria, piedra de toque de la famosa «Biblioteca del Siglo
+                                XXI» y heredera de la aclamada Vacío perfecto, es otro ejemplo delirante del genio de
+                                Stanisław Lem. Artistas que realizan pornografía mediante el uso de rayos X, científicos
+                                que cultivan bacterias que se comunican en código Morse y son capaces de predecir el
+                                futuro, vendedores de enciclopedias «de cuarenta y cuatro magnetomos» en las cuales está
+                                escrita la historia que aún no ha acontecido, inteligencias artificiales que crean obras
+                                de autores tan intocables como Dostoievski y que ni ellos mismos se habrían atrevido a
+                                concebir. Deliciosas sátiras en las que, una vez más, Lem pone en tela de juicio las
+                                respuestas a las grandes preguntas de la Humanidad. Magnitud imaginaria no podría ser
+                                considerado un simple libro de ciencia ficción, ya que no busca la espectacularidad
+                                facilona que suele ser sustancial en la estructura de esa clase de obras. Al contrario,
+                                Stanisław Lem desecha ese lugar común y apuesta por una lluvia de cuestionamientos
+                                filosóficos que, a partir de la sistemática hiperbolización futurista y de un humor que
+                                arrasará con gran parte de las certezas de las que forman nuestra vida, llevan al lector
+                                hacia la exploración de las manías que han rondado a los seres humanos desde el momento
+                                mismo en que se percataron de la singularidad de su propio raciocinio. Una joya, para
+                                decirlo en pocas palabras.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m3').close()">Ok!</button>
+                            <a href="./assets/PDF/Magnitud Imaginaria - Stanislaw Lem.pdf"
+                                download="Magnitud Imaginaria - Stanislaw Lem.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m3').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-las-aguas-de-la-eterna-juventud-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Las Aguas de la Eterna Juventud</p>
+                        <p>Donna Leon </p>
+                        <p>214</p>
+                        <dialog id="m4">
+                            <h2>Sinopsis</h2>
+                            <p align="center">El comisario Brunetti investiga el extraño caso de Manuela, una joven
+                                treintañera que, años atrás, a los quince años, estuvo a punto de morir ahogada. Su
+                                abuela, la condesa Demetriana Lando-Continui, desconfía de la versión policial, según la
+                                cual la joven se arrojó a las aguas de Venecia. El punto de partida para la
+                                investigación de Brunetti es Pietro Cavanis, el único testigo, un borracho desmemoriado.
+                                La joven quedó seriamente perjudicada, atrapada en una eterna juventud por una lesión
+                                cerebral irreversible. El comisario buscará al verdadero culpable entre los archivos y
+                                rincones de una Venecia masificada por el turismo, recelosa de la nueva inmigración y
+                                sin expectativas para los jóvenes. Pero a veces basta con sacudir la historia para que
+                                resplandezca la verdad. La ignorancia de la ley es la peor condena.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m4').close()">Ok!</button>
+                            <a href="./assets/PDF/Las Aguas de la Eterna Juventud - Donna Leon.pdf"
+                                download="Las Aguas de la Eterna Juventud - Donna Leon.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m4').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-costa-barbara-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Costa Bárbara</p>
+                        <p>Ross Macdonald </p>
+                        <p>86</p>
+                        <dialog id="m5">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Malibú, California. Los bajos fondos de la sociedad se codean a diario con
+                                el lujo y los privilegios de los magnates de las finanzas, el petróleo y el séptimo
+                                arte. En uno de sus clubes sociales más exclusivos, una joven instructora de natación ha
+                                desaparecido sin dejar rastro. El detective Lew Archer, deberá encontrar a la bella y
+                                rubia tras recibir el encargo de su desesperado marido. Pero el marido parece no ser el
+                                único interesado en la joven: policías corruptos, un rudo galán de cine y un rico
+                                empresario de Hollywood se cruzarán en el camino de Archer una y otra vez. Solo el
+                                descubrimiento de que un año y medio atrás tuvo lugar un asesinato no resuelto en el
+                                mismo club hará que el detective deba poner los cinco sentidos en un caso que parecía
+                                resuelto de antemano.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m5').close()">Ok!</button>
+                            <a href="./assets/PDF/Costa Barbara - Ross Macdonald.pdf"
+                                download="Costa Barbara - Ross Macdonald.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m5').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+        <!--Libros-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center all-tittles">ayuda del sistema</h4>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dignissimos qui molestias
+                        ipsum officiis unde aliquid consequatur, accusamus delectus asperiores sunt. Quibusdam veniam
+                        ipsa accusamus error. Animi mollitia corporis iusto.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                class="zmdi zmdi-thumb-up"></i> &nbsp; De acuerdo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer full-reset">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h4 class="all-tittles">Acerca de</h4>
+                        <p>
+                            Bienvenido al catálogo, selecciona una categoría de la lista para empezar, si deseas buscar
+                            un libro por nombre o título has click en el icono que se encuentra en la barra superior.
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h4 class="all-tittles">Desarrollador</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="zmdi zmdi-check zmdi-hc-fw"></i>&nbsp; Roberto Daniel Saavedra Caballero <i
+                                    class="zmdi zmdi-facebook zmdi-hc-fw footer-social"></i><i
+                                    class="zmdi zmdi-twitter zmdi-hc-fw footer-social"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright full-reset all-tittles">© 2022-2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catálogo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Shortcut Icon" type="image/x-icon" href="assets/icons/book.ico" />
+    <script src="js/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="css/sweet-alert.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="navbar-lateral full-reset">
+        <div class="visible-xs font-movile-menu mobile-menu-button"></div>
+        <div class="full-reset container-menu-movile nav-lateral-scroll">
+            <div class="logo full-reset all-tittles">
+                <i class="visible-xs zmdi zmdi-close pull-left mobile-menu-button"
+                    style="line-height: 55px; cursor: pointer; padding: 0 10px; margin-left: 7px;"></i>
+                sistema bibliotecario
+            </div>
+            <div class="nav-lateral-divider full-reset"></div>
+            <div class="full-reset" style="padding: 10px 0; color:#fff;">
+                <figure>
+                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
+                        style="width:55%;">
+                </figure>
+                <p class="text-center" style="padding-top: 15px;">Sistema Bibliotecario</p>
+            </div>
+            <div class="nav-lateral-divider full-reset"></div>
+            <div class="full-reset nav-lateral-list-menu">
+                <ul class="list-unstyled">
+                    <li><a href="catalog.html"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp; Inicio</a></li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-case zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Administración <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw icon-sub-menu"></i>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><a href="institution.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp;
+                                   Plantel</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Libros y catálogo <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw icon-sub-menu"></i>
+                        </div>
+                        <ul class="list-unstyled">
+                           
+                            <li><a href="catalog.html"><i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp;
+                                    Catálogo</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li><a href="report.html"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y
+                            estadísticas</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="content-page-container full-reset custom-scroll-containers">
+        <nav class="navbar-user-top full-reset">
+            <ul class="list-unstyled full-reset">
+                <figure>
+                    <img src="assets/img/user01.png" alt="user-picture" class="img-responsive img-circle center-box">
+                </figure>
+                <li style="color:#fff; cursor:default;">
+                    <span class="all-tittles">Tu cuenta</span>
+                </li>
+                <li class="tooltips-general exit-system-button" data-href="index.html" data-placement="bottom"
+                    title="Salir del sistema">
+                    <i class="zmdi zmdi-power"></i>
+                </li>
+                <li class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
+                    <i class="zmdi zmdi-help-outline zmdi-hc-fw"></i>
+                </li>
+                <li class="mobile-menu-button visible-xs" style="float: left !important;">
+                    <i class="zmdi zmdi-menu"></i>
+                </li>
+                <li class="desktop-menu-button hidden-xs" style="float: left !important;">
+                    <i class="zmdi zmdi-swap"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="all-tittles">Sistema bibliotecario <small>Catálogo de libros</small></h1>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin: 40px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/checklist.png" alt="pdf" class="img-responsive center-box"
+                        style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                   Libros y novelas de ciencia ficción
+                </div>
+            </div>
+            <div class="conteiner-fluid">
+                <ul class="nav nav-tabs nav-justified" style="font-size: 17px;">
+                    <li><a href="catalog.html">Completo</a></li>
+                    <li><a href="Terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Cronica</a></li>
+                    <li><a href="Teatro.html">Teatro</a></li>
+                    <li><a href="Drama.html">Drama</a></li>
+                    <li><a href="Novela.html">Novela</a></li>
+                    <li><a href="Fatasia.html">Fantasía</a></li>
+                    <li class="active"><a href="cienciaf.html">Ciencia Ficción</a></li>
+                    <li><a href="articulos.html">Artículo</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!--Libros-->
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/02/descargar-libro-el-jardin-de-rama-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Jardín de Rama</p>
+                        <p> Arthur C. Clarke</p>
+                        <p>256</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">El jardín de Rama continúa la historia apasionante que comenzó con Cita con Rama y Rama II, la gran serie de ciencia ficción creada por Arthur C. Clarke. En el año 2130 una misteriosa nave espacial desierta, Rama, llegó al sistema solar. Cuando volvió a partir hacia su nuevo destino, muchos misterios quedaron sin resolver. Ochenta años después hizo su arribo una segunda nave, esta vez habitada. El nuevo encuentro terminó en tragedia, con un intento de destruir el extraño objeto por parte de la Tierra. Ahora Rama II se aleja del sistema solar. A bordo hay tres humanos, dos hombres y una mujer. Van rumbo a lo desconocido, en un viaje que jamás vivió hombre alguno. Posteriormente otra nave, Rama Tres, regresa al sistema solar con algunos de los humanos anteriores y el objetivo de recoger algunos miles de humanos más para formar el Nuevo Edén.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/El Jardin de Rama - Arthur C. Clarke.pdf"
+                                download="El Jardin de Rama - Arthur C. Clarke.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-hombre-invisible-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Hombre Invisible</p>
+                        <p>H. G. Wells</p>
+                        <p>568</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Escrita en 1897, poco después de «La máquina del tiempo», El hombre invisible cuyo personaje central ha alcanzado, como Drácula o Frankenstein, un lugar en el imaginario del mundo moderno­ da forma definitiva a uno de los motivos que habrían de cobrar más relieve, y en cierto sentido hacerse pavorosa realidad, en el siglo XX: el del uso irreflexivo e inescrupuloso del conocimiento científico y las consecuencias nefastas de ponerlo al servicio de causas egoístas o espurias.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="./assets/PDF/El Hombre Invisible - H. G. Wells.pdf"
+                                download="El Hombre Invisible - H. G. Wells.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/01/descargar-libro-hermosas-criaturas-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Hermosas Criaturas</p>
+                        <p>Margaret Stohl</p>
+                        <p>409</p>
+                        <dialog id="m3">
+                            <h2>Sinopsis</h2>
+                            <p align="center">«Siempre pensé que Gatlin, mi pueblo, oculto en lo más profundo de los bosques de Carolina del Sur, era un lugar perdido en medio de ninguna parte. Aquí nunca ocurría nada y nunca cambiaba nada». El joven Ethan Wate contaba el tiempo que le quedaba para escapar de su pueblo hasta que una nueva estudiante, Lena Duchannes, llegó a su instituto y le reveló un mundo secreto que había permanecido oculto bajo los robles cubiertos de musgo y las aceras agrietadas de Gatlin. Hay una maldición. A veces, la vida se acaba. Los ojos de Ethan se han abierto al lado oscuro de Gatlin. Y ya no hay vuelta atrás. Nada es lo que parece.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m3').close()">Ok!</button>
+                            <a href="./assets/PDF/Hermosas Criaturas - Margaret Stohl.pdf"
+                                download="Hermosas Criaturas - Margaret Stohl.pdf"><button id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m3').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/01/descargar-libro-ilion-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Ilión</p>
+                        <p>Dan Simmons</p>
+                        <p>583</p>
+                        <dialog id="m4">
+                            <h2>Sinopsis</h2>
+                            <p align="center">La historia del asedio de Troya (Ilión), reconstruida en un lejano futuro con elementos de ciencia ficción: los dioses son post-humanos que disponen de una "divina" tecnología cuántica, el Monte Olimpo está en Marte y los nuevos robots "moravecs" de más allá del cinturón de asteroides se interesan por la inusitada actividad que se observa en el planeta rojo. Mientras tanto, los últimos humanos en la Tierra viven una insulsa vida de "eloi" bajo la atenta vigilancia y supervisión de unos misteriosos Voynix de origen desconocido. Los elementos para la más inteligente revisión de la más clásica aventura épica humana están servidos.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m4').close()">Ok!</button>
+                            <a href="./assets/PDF/Ilion - Dan Simmons.pdf"
+                                download="Ilion - Dan Simmons.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m4').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/06/descargar-libro-nunca-olvidan-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Nunca Olvidan</p>
+                        <p>Jack Ryan </p>
+                        <p>203</p>
+                        <dialog id="m5">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Ruby nunca hizo preguntas sobre las habilidades que casi le cuestan la vida, pero ahora debe recurrir a ellas a diario, en peligrosas misiones para derribar un Gobierno corrupto. Los chavales de la Liga la llaman Líder, pero ella sabe mejor que nadie lo que es en realidad: un monstruo. Cuando le confían un arriesgado secreto, Ruby deberá embarcarse en su misión más peligrosa: partir en busca de la información acerca de la enfermedad que acabó con la vida de los jóvenes estadounidenses y que convirtió a los pocos supervivientes en seres marginados, temidos y odiados. La verdad se encuentra a salvo en un solo lugar: en manos de Liam Stewart, el chico que una vez supuso el futuro soñado para Ruby y que ahora es incapaz de reconocerla. ¿Y si ganar la guerra significa perderse a sí misma?</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m5').close()">Ok!</button>
+                            <a href="./assets/PDF/Nunca Olvidan - Alexandra Bracken.pdf" download="Nunca Olvidan - Alexandra Bracken.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m5').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+       
+        <!--Libros-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center all-tittles">ayuda del sistema</h4>
+                    </div>
+                    <div class="modal-body">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore dignissimos qui molestias
+                        ipsum officiis unde aliquid consequatur, accusamus delectus asperiores sunt. Quibusdam veniam
+                        ipsa accusamus error. Animi mollitia corporis iusto.
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                class="zmdi zmdi-thumb-up"></i> &nbsp; De acuerdo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer full-reset">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h4 class="all-tittles">Acerca de</h4>
+                        <p>
+                            Bienvenido al catálogo, selecciona una categoría de la lista para empezar, si deseas buscar
+                            un libro por nombre o título has click en el icono que se encuentra en la barra superior.
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h4 class="all-tittles">Desarrollador</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="zmdi zmdi-check zmdi-hc-fw"></i>&nbsp; Roberto Daniel Saavedra Caballero <i
+                                    class="zmdi zmdi-facebook zmdi-hc-fw footer-social"></i><i
+                                    class="zmdi zmdi-twitter zmdi-hc-fw footer-social"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright full-reset all-tittles">© 2022-2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>

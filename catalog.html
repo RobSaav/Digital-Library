@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>Catálogo</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="Shortcut Icon" type="image/x-icon" href="assets/icons/book.ico" />
+    <script src="js/sweet-alert.min.js"></script>
+    <link rel="stylesheet" href="css/sweet-alert.css">
+    <link rel="stylesheet" href="css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="navbar-lateral full-reset">
+        <div class="visible-xs font-movile-menu mobile-menu-button"></div>
+        <div class="full-reset container-menu-movile nav-lateral-scroll">
+            <div class="logo full-reset all-tittles">
+                <i class="visible-xs zmdi zmdi-close pull-left mobile-menu-button"
+                    style="line-height: 55px; cursor: pointer; padding: 0 10px; margin-left: 7px;"></i>
+                sistema bibliotecario
+            </div>
+            <div class="nav-lateral-divider full-reset"></div>
+            <div class="full-reset" style="padding: 10px 0; color:#fff;">
+                <figure>
+                    <img src="assets/img/logo.png" alt="Biblioteca" class="img-responsive center-box"
+                        style="width:55%;">
+                </figure>
+                <p class="text-center" style="padding-top: 15px;">Sistema Bibliotecario</p>
+            </div>
+            <div class="nav-lateral-divider full-reset"></div>
+            <div class="full-reset nav-lateral-list-menu">
+                <ul class="list-unstyled">
+                    <li><a href="../Biblioteca/php/index.php"><i class="zmdi zmdi-home zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Login</a></li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-case zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Administración <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw icon-sub-menu"></i>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><a href="institution.html"><i class="zmdi zmdi-balance zmdi-hc-fw"></i>&nbsp;&nbsp;
+                                    Plantel</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <div class="dropdown-menu-button"><i class="zmdi zmdi-assignment-o zmdi-hc-fw"></i>&nbsp;&nbsp;
+                            Libros y catálogo <i class="zmdi zmdi-chevron-down pull-right zmdi-hc-fw icon-sub-menu"></i>
+                        </div>
+                        <ul class="list-unstyled">
+                            <li><a href="catalog.html"><i class="zmdi zmdi-bookmark-outline zmdi-hc-fw"></i>&nbsp;&nbsp;
+                                    Catálogo</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="../Biblioteca/php/report.php"><i class="zmdi zmdi-trending-up zmdi-hc-fw"></i>&nbsp;&nbsp; Reportes y
+                            estadísticas</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="content-page-container full-reset custom-scroll-containers">
+        <nav class="navbar-user-top full-reset">
+            <ul class="list-unstyled full-reset">
+                <li class="tooltips-general exit-system-button" data-href="../Biblioteca/php/index.php" data-placement="bottom"
+                    title="Salir del sistema">
+                    <i class="zmdi zmdi-power"></i>
+                </li>
+                <li class="tooltips-general btn-help" data-placement="bottom" title="Ayuda">
+                    <i class="zmdi zmdi-help-outline zmdi-hc-fw"></i>
+                </li>
+                <li class="mobile-menu-button visible-xs" style="float: left !important;">
+                    <i class="zmdi zmdi-menu"></i>
+                </li>
+                <li class="desktop-menu-button hidden-xs" style="float: left !important;">
+                    <i class="zmdi zmdi-swap"></i>
+                </li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="page-header">
+                <h1 class="all-tittles">Sistema bibliotecario <small>Catálogo de libros</small></h1>
+            </div>
+        </div>
+        <div class="container-fluid" style="margin: 40px 0;">
+            <div class="row">
+                <div class="col-xs-12 col-sm-4 col-md-3">
+                    <img src="assets/img/checklist.png" alt="pdf" class="img-responsive center-box"
+                        style="max-width: 110px;">
+                </div>
+                <div class="col-xs-12 col-sm-8 col-md-8 text-justify lead">
+                    Generos de libros y articulos
+                </div>
+            </div>
+            <div class="conteiner-fluid">
+                <ul class="nav nav-tabs nav-justified" style="font-size: 17px;">
+                    <li class="active"><a href="catalog.html">Completo</a></li>
+                    <li><a href="Terror.html">Terror</a></li>
+                    <li><a href="comedia.html">Cronica</a></li>
+                    <li><a href="Teatro.html">Teatro</a></li>
+                    <li><a href="Drama.html">Drama</a></li>
+                    <li><a href="Novela.html">Novela</a></li>
+                    <li><a href="Fatasia.html">Fantasía</a></li>
+                    <li><a href="cienciaf.html">Ciencia Ficción</a></li>
+                    <li><a href="articulos.html">Artículo</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--Libros-->
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/01/descargar-libro-animales-fantasticos-y-donde-encontrarlos-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Animales Fantásticos</p>
+                        <p>J. K. Rowling</p>
+                        <p>Proximamente</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Hay un ejemplar de Animales fantásticos y dónde encontrarlos en casi todos
+                                los hogares de magos del país. Ahora, sólo por cierto tiempo, también los muggles pueden
+                                descubrir dónde viven los quintapeds, qué come el puffskein y por qué es mejor no dejar
+                                leche fuera de casa para un knarl.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="" download=""><button id="close">Proximamente</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-magnitud-imaginaria1973-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Autodefensa</p>
+                        <p>Jonathan Kellerman </p>
+                        <p>384</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Lucy tiene pesadillas. Seguramente el haber sido jurado en el juicio del
+                                peligroso psicópata ha hecho aflorar viejos terrores. El sueño de Lucy quiere que ella,
+                                aún niña, vea cómo su padre y otros hombres transportan el cuerpo inanimado de una joven
+                                por un bosque. Es el terror desnudo, pero también el terror que provoca quizá un pasado
+                                que no quiere recordar, lo que lleva a Lucy al consultorio del doctor Delaware. Y para
+                                éste es la primera incógnita: ¿el sueño de Lucy es un símbolo onírico o reminiscencia de
+                                un hecho real? Y si fuera lo último, ¿quién era la muchacha, quizá muerta, que
+                                transportaban los hombres? De ese modo Delaware, ayudado por su amigo el detective Milo
+                                Sturgis, comienza a bucear en un pasado en el que la pasión artística, la lujuria más
+                                descarnada y la ambición se conjugan con el desamor.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="./assets/PDF/Autodefensa - Jonathan Kellerman.pdf"
+                                download="Autodefensa - Jonathan Kellerman.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/02/descargar-libro-el-jardin-de-rama-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Jardín de Rama</p>
+                        <p> Arthur C. Clarke</p>
+                        <p>256</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">El jardín de Rama continúa la historia apasionante que comenzó con Cita
+                                con Rama y Rama II, la gran serie de ciencia ficción creada por Arthur C. Clarke. En el
+                                año 2130 una misteriosa nave espacial desierta, Rama, llegó al sistema solar. Cuando
+                                volvió a partir hacia su nuevo destino, muchos misterios quedaron sin resolver. Ochenta
+                                años después hizo su arribo una segunda nave, esta vez habitada. El nuevo encuentro
+                                terminó en tragedia, con un intento de destruir el extraño objeto por parte de la
+                                Tierra. Ahora Rama II se aleja del sistema solar. A bordo hay tres humanos, dos hombres
+                                y una mujer. Van rumbo a lo desconocido, en un viaje que jamás vivió hombre alguno.
+                                Posteriormente otra nave, Rama Tres, regresa al sistema solar con algunos de los humanos
+                                anteriores y el objetivo de recoger algunos miles de humanos más para formar el Nuevo
+                                Edén.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/El Jardin de Rama - Arthur C. Clarke.pdf"
+                                download="El Jardin de Rama - Arthur C. Clarke.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2016/10/descargar-libro-la-casa-vacia-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Nacimiento del Tiempo</p>
+                        <p>Ilya Prigogine </p>
+                        <p>68</p>
+                        <dialog id="m4">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Presentamos al lector el texto de dos breves conferencias sobre el mismo
+                                tema, el tiempo, dadas por Ilya Prigogine a pocos años de distancia una de la otra.
+                                Originadas ambas por una invitación de la empresa Montedison, tienen solamente del
+                                escrito circunstancial la frescura y el tono de divulgación obligados por las
+                                limitaciones del medio: una exposición oral para un auditorio no especializado. Con el
+                                mérito añadido de ofrecer, en pocas páginas y sin el auxilio de complejos aparatos
+                                matemáticos, con gran claridad, las sólidas tesis de su autor. Esto es lo que nos ha
+                                convencido de la utilidad de la publicación conjunta de las dos conferencias. La breve
+                                nota biográfica y el texto de la conversación que las preceden introducirán al lector en
+                                la compleja problemática que nos presenta Prigogine.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m4').close()">Ok!</button>
+                            <a href="./assets/PDF/El Nacimiento del Tiempo - Ilya Prigogine.pdf"
+                                download="El Nacimiento del Tiempo - Ilya Prigogine.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m4').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2016/11/descargar-libro-el-retorno-de-la-sombra-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Retorno de la Sombra</p>
+                        <p>J. R. R. Tolkien</p>
+                        <p>256</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">En este primer volumen de la Historia de El Señor de los Anillos,
+                                Christopher Tolkien describe, citando notas y borradores, la intrincada evolución de La
+                                Comunidad del Anillo, y la gradual emergencia de las concepciones que transformaron lo
+                                que iba a ser un libro mucho más corto: una secuela de El hobbit. El anillo mágico de
+                                Bilbo crece, hasta convertirse en el peligroso y poderoso Anillo del Señor Oscuro, y en
+                                un asombroso e inesperado salto narrativo, un jinete Negro, entra cabalgando en la
+                                Comarca. La identidad del supuesto hobbit llamado Trotter (más tarde Trancos o Aragorn)
+                                es en un principio un misterio insoluble, hasta que al fin, muy lentamente, Tolkien
+                                descubre que tiene que ser un hombre. Muchas de las figuras mayores del libro aparecen
+                                con otros nombres y extrañas características: un siniestro Bárbol, aliado del Enemigo,
+                                un feroz y malévolo granjero Maggot. La historia concluye en el punto en que J. R. R.
+                                Tolkien abandona el relato durante largo tiempo, cuando la Compañía del Anillo, en la
+                                que todavía faltan Legolas y Gimli, se encuentra ante la tumba de Balin, en las Minas de
+                                Moria Este volumen valió a Christopher Tolkien en 1989 el Mythopoeic Scholarship Award
+                                en su subcategoría de estudios sobre los Inklings.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/El Retorno de la Sombra - J. R. R. Tolkien.pdf"
+                                download="El Retorno de la Sombra - J. R. R. Tolkien.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-rio-del-eden-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Río del Edén</p>
+                        <p> Richard Dawkins</p>
+                        <p>143</p>
+                        <dialog id="m5">
+                            <h2>Sinopsis</h2>
+                            <p align="center">¿Cómo comenzó la bomba de replicación que llamamos «vida» y a dónde en el
+                                mundo o, mejor dicho, en el universo, se dirige? Escribiendo con un ingenio
+                                característico y una capacidad de clarificar fenómenos complejos (el «The New York
+                                Times» describió su estilo como «el tipo de divulgación científica que hace que el
+                                lector se sienta como un genio»), Richard Dawkins se enfrenta a este antiguo misterio.
+                            </p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m5').close()">Ok!</button>
+                            <a href="./assets/PDF/El Rio del Eden - Richard Dawkins.pdf"
+                                download="El Rio del Eden - Richard Dawkins.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m5').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-los-enamoramientos-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Los Enamoramientos</p>
+                        <p>Javier Marías</p>
+                        <p>192</p>
+                        <dialog id="m4">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Los enamoramientos reflexiona sobre el estado de enamoramiento,
+                                considerado casi universalmente como algo positivo e incluso redentor a veces, tanto que
+                                parece justificar casi todas las cosas: las acciones nobles y desinteresadas, pero
+                                también los mayores desmanes y ruindades.También es un libro sobre la impunidad y sobre
+                                la horrible fuerza de los hechos; sobre la inconveniencia de que los muertos pudieran
+                                volver, por mucho que se los haya llorado y que en apariencia nada se deseara tanto como
+                                su regreso, o al menos que siguieran vivos; también sobre la imposibilidad de saber
+                                nunca la verdad cabalmente, ni siquiera la de nuestro pensamiento, oscilante y variable
+                                siempre.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m4').close()">Ok!</button>
+                            <a href="./assets/PDF/Los Enamoramientos - Javier Marias.pdf"
+                                download="Los Enamoramientos - Javier Marias.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m4').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-hombre-invisible-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Hombre Invisible</p>
+                        <p>H. G. Wells</p>
+                        <p>568</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Escrita en 1897, poco después de «La máquina del tiempo», El hombre
+                                invisible cuyo personaje central ha alcanzado, como Drácula o Frankenstein, un lugar en
+                                el imaginario del mundo moderno­ da forma definitiva a uno de los motivos que habrían de
+                                cobrar más relieve, y en cierto sentido hacerse pavorosa realidad, en el siglo XX: el
+                                del uso irreflexivo e inescrupuloso del conocimiento científico y las consecuencias
+                                nefastas de ponerlo al servicio de causas egoístas o espurias.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="./assets/PDF/El Hombre Invisible - H. G. Wells.pdf"
+                                download="El Hombre Invisible - H. G. Wells.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-cadena-de-fuego-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Cadena de Fuego</p>
+                        <p>Terry Goodkind</p>
+                        <p>Proximamente</p>
+                        <dialog id="m4">
+                            <h2>Sinopsis</h2>
+                            <p align="center">En su búsqueda de Kahlan, Richard viaja a las Fuentes de Agaden para pedir
+                                ayuda a la bruja Shota. Pero la información que obtiene resulta tan enigmática que no
+                                parece que vaya a serle de ninguna utilidad. Y el precio que ha de pagar por ella es muy
+                                alto. Desesperado, con Zedd, Ann y Nathan insistiéndole para que se reúna con el
+                                ejército y se enfrente a Jagang en lo que podía ser la batalla definitiva, Richard está
+                                a punto de abandonar. En un último intento desesperado por averiguar la verdad, Richard
+                                huye del Alcázar del Hechicero en busca de respuestas a la enigmática información que le
+                                dio Shota. ¿Qué es la Cadena de Fuego? ¿Qué es la Profunda Nada? Qué simboliza la víbora
+                                con cuatro cabezas?</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m4').close()">Ok!</button>
+                            <a href="" download=""><button id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m4').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://3.bp.blogspot.com/-Fa5zKJL8nqw/UzrI2fpHEpI/AAAAAAAAa8w/I1Dg8iNH7Eo/s1600/carrie%2Bnel%2Bpaperback%2Bstephen%2Bking.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Carrie</p>
+                        <p>Stephen King</p>
+                        <p>256</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">En Carrie, una de las primeras novelas de su autor, King nos relata el
+                                escalofriante caso de una joven de apariencia insignificante que se transformó en un ser
+                                de poderes anormales, sembrando el terror en su ciudad. Con pulso mágico para mantener
+                                la tensión a lo largo de todo el libro, Stephen King narra la atormentada adolescencia
+                                de Carrie, y nos envuelve en una atmósfera sobrecogedora cuando la muchacha realiza una
+                                serie de descubrimientos hasta llegar al terrible momento de la venganza. Esta novela
+                                fue llevada al cine con un inmenso éxito de público y crítica y recibió una segunda
+                                adaptación en 2013.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/carrie.PDF - Stephen King - Carrie.pdf"
+                                download="carrie.PDF - Stephen King - Carrie.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-costa-barbara-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Costa Bárbara</p>
+                        <p>Ross Macdonald </p>
+                        <p>86</p>
+                        <dialog id="m5">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Malibú, California. Los bajos fondos de la sociedad se codean a diario con
+                                el lujo y los privilegios de los magnates de las finanzas, el petróleo y el séptimo
+                                arte. En uno de sus clubes sociales más exclusivos, una joven instructora de natación ha
+                                desaparecido sin dejar rastro. El detective Lew Archer, deberá encontrar a la bella y
+                                rubia tras recibir el encargo de su desesperado marido. Pero el marido parece no ser el
+                                único interesado en la joven: policías corruptos, un rudo galán de cine y un rico
+                                empresario de Hollywood se cruzarán en el camino de Archer una y otra vez. Solo el
+                                descubrimiento de que un año y medio atrás tuvo lugar un asesinato no resuelto en el
+                                mismo club hará que el detective deba poner los cinco sentidos en un caso que parecía
+                                resuelto de antemano.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m5').close()">Ok!</button>
+                            <a href="./assets/PDF/Costa Barbara - Ross Macdonald.pdf"
+                                download="Costa Barbara - Ross Macdonald.pdf"><button id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m5').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-cuentos-el-ojo-sin-parpado-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Cuentos</p>
+                        <p>Arthur Machen </p>
+                        <p>203</p>
+                        <dialog id="m5">
+                            <h2>Sinopsis</h2>
+                            <p align="center">«Machen será siempre recordado por sus relatos de lo sobrenatural, género
+                                en el que pocos le superan. A su literatura aportó unas calificaciones poco usuales. Su
+                                infancia en una parroquia rural le dio la oportunidad de estudiar personalmente las
+                                costumbres y tradiciones locales. Sus primeros años, también solitarios, de Londres,
+                                donde intentó ganarse el sustento catalogando libros raros sobre ocultismo o traduciendo
+                                literatura medieval, le proporcionaron el fondo literario de sus temas. Y, todavía más
+                                importante, estuvo provisto para su labor de la clase de imaginación que sabe distinguir
+                                la maravilla que existe en cosas tan corrientes que escapan a la consideración de la
+                                gente normal».</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m5').close()">Ok!</button>
+                            <a href="./assets/PDF/Cuentos - Arthur Machen.pdf"
+                                download="Cuentos - Arthur Machen.pdf"><button id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m5').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-amor-de-erika-ewald-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Amor de Erika Ewald</p>
+                        <p>Stefan Zweig</p>
+                        <p>39 (Prueba)</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Comienza con la explicación de la muerte de un prominente profesor de la
+                                Universidad de Miskatonic y un estudio de sus documentos. Estos incluyen un informe
+                                sobre un ataque en un culto satánico. Una investigación sobre los cultistas saca a la
+                                luz pistas sobre la horrorosa criatura que veneran, Cthulhu. Este ser, que supuestamente
+                                llegó con sus seguidores extraterrestres desde las estrellas millones de años antes de
+                                la aparición del Hombre, ahora descansa en un sueño profundo en su ciudad hundida
+                                R’lyeh.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="./assets/PDF/El Amor de Erika Ewald - Stefan Zweig.pdf"
+                                download="El Amor de Erika Ewald - Stefan Zweig.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://image.isu.pub/111013005257-27956e2de4b0429b9342cc835fa7bf77/jpg/page_1.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El almohadón de plumas (prueba)</p>
+                        <p>Horacio Quiroga</p>
+                        <p>64</p>
+                        <dialog id="m3">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Considerado el Edgar Allan Poe latinoamericano, Horacio Quiroga pudo
+                                mostrar en un cuento corto una triste y trágica historia de amor en la que la
+                                indiferencia ante el matrimonio termina de la peor manera posible. Pero la realidad es
+                                que hay mucho simbolismo escondido entre las pocas páginas de El almohadón de plumas.
+
+                                El amor y la muerte se entremezclan en una trama sencilla pero agobiante, en la que el
+                                autor, mediante un cuento de terror, narra la ansiedad del amor, la idealización del
+                                matrimonio y la impotencia de un hombre que pierde poco a poco a su mujer sin saber por
+                                qué, y sin saber cómo evitarlo.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m3').close()">Ok!</button>
+                            <a href="./assets/PDF/El almohadón de plumas.pdf"
+                                download="El almohadón de plumas.pdf"><button id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m3').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/03/descargar-libro-el-amante-de-lady-chatterley-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Amante de Lady Chatterley">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Amante de Lady Chatterley</p>
+                        <p>D. H. Lawrence</p>
+                        <p>256</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Inválido de guerra, Sir Clifford Chatterley y su esposa Connie llevan una
+                                existencia acomodada, aparentemente plácida, rodeada de los placeres burgueses de las
+                                reuniones sociales y regida por los correctos términos que deben ser propios de todo
+                                buen matrimonio. Connie, sin embargo, no puede evitar sentir un vacío vital. La
+                                irrupción en su vida de Mellors, el guardabosque de la mansión familiar, la pondrá en
+                                contacto con las energías más primarias e instintivas y relacionadas con la vida. La
+                                fuerte corriente relacionada con la energía sexual que recorre casi toda la obra de D.
+                                H. Lawrence encuentra una de sus máximas expresiones en El amante de Lady Chatterley
+                                novela que se vio envuelta en la polémica y el escándalo desde el momento de su
+                                aparición.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/El Amante de Lady Chatterley - D. H. Lawrence.pdf"
+                                download="El Amante de Lady Chatterley - D. H. Lawrence.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-amor-de-erika-ewald-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Amor de Erika Ewald</p>
+                        <p>Stefan Zweig</p>
+                        <p>39 (Prueba)</p>
+                        <dialog id="m2">
+                            <h2>Sinopsis</h2>
+                            <p align="center">Comienza con la explicación de la muerte de un prominente profesor de la
+                                Universidad de Miskatonic y un estudio de sus documentos. Estos incluyen un informe
+                                sobre un ataque en un culto satánico. Una investigación sobre los cultistas saca a la
+                                luz pistas sobre la horrorosa criatura que veneran, Cthulhu. Este ser, que supuestamente
+                                llegó con sus seguidores extraterrestres desde las estrellas millones de años antes de
+                                la aparición del Hombre, ahora descansa en un sueño profundo en su ciudad hundida
+                                R’lyeh.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m2').close()">Ok!</button>
+                            <a href="./assets/PDF/El Amor de Erika Ewald - Stefan Zweig.pdf"
+                                download="El Amor de Erika Ewald - Stefan Zweig.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m2').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-experimento-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Experimento</p>
+                        <p>Sebastian Fitzek</p>
+                        <p>242</p>
+                        <dialog id="m1">
+                            <h2>Sinopsis</h2>
+                            <p align="center">
+
+                                De la mano de su profesor, dos estudiantes de psicología participan en un experimento
+                                que consiste en estudiar el expediente médico de un paciente de una clínica psiquiátrica
+                                privada de Berlín, donde hace años tuvieron lugar escenas de horror y que, actualmente,
+                                se mantiene cerrada al público. En medio de los acontecimientos se hallan el joven
+                                Caspar, un paciente que sufre amnesia, incapaz de recordar quién es, y también un
+                                asesino en serie conocido como el Destructor de almas. Tras el ataque a tres mujeres, el
+                                Destructor de almas centrará ahora su objetivo en el centro psiquiátrico. Cualquiera
+                                puede ser la próxima víctima…</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m1').close()">Ok!</button>
+                            <a href="./assets/PDF/El Experimento - Sebastian Fitzek.pdf"
+                                download="El Experimento - Sebastian Fitzek.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m1').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/07/descargar-libro-el-hombre-del-balcon-martin-beck-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>El Hombre del Balcón</p>
+                        <p>Martin Beck </p>
+                        <p>174</p>
+                        <dialog id="m3">
+                            <h2>Sinopsis</h2>
+                            <p align="center">El verano de 1963, dos niñas sufrieron abusos sexuales y fueron asesinadas
+                                en Estocolmo por un sujeto que se las llevó con engaños del parque en que jugaban. Este
+                                suceso del mundo real fue el punto de partida de la novela. Y, además, es también lo
+                                primero que nos llama la atención cuando empezamos a leer el libro, que se trata de una
+                                historia real. La escena inaugural es un relato objetivo que, aisladamente, no presenta
+                                ningún tipo de rasgo dramático ni carga emocional alguna. En ella se describe un pueblo
+                                que se despierta, las rutinas de sus habitantes, los individuos que constituyen las
+                                piezas clave de dichas rutinas, el mosaico de pequeños sucesos triviales que pueden
+                                observarse desde el balcón de una ciudad bien organizada de la social democracia
+                                escandinava. Así pues, cabe preguntarse cómo es que dicha escena inaugural transmite un
+                                horror tan notable y extraño.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m3').close()">Ok!</button>
+                            <a href="./assets/PDF/El Hombre del Balcon - Maj Sjowall.pdf"
+                                download="El Hombre del Balcon - Maj Sjowall.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m3').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2016/12/descargar-libro-eragon-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Eragon</p>
+                        <p>Christopher Paolini</p>
+                        <p>330</p>
+                        <dialog id="m4">
+                            <h2>Sinopsis</h2>
+                            <p align="center">En el reino legendario de Alagaësia la guerra se está gestando. Los
+                                jinetes protectores de la paz del Imperio y los únicos capaces de controlar a los
+                                inteligentes dragones, se han extinguido o han pasado a formar parte de las tropas del
+                                malvado rey Galbatorix. Los elfos hace tiempo que se han exiliado a un lugar oculto y
+                                los vardenos, un grupo disidente, se ocultan en ciudades protegidas. Cuando Eragon, un
+                                joven de 15 años que vive en una pequeña aldea, se encuentra con una piedra preciosa en
+                                medio del bosque a donde ha ido a cazar, poco se espera que ese suceso vaya a cambiar su
+                                vida y el destino de Alagaësia. Lo único que desea es venderla para así asegurar la
+                                subsistencia de su familia durante el duro invierno. Sin embargo, una noche la gema se
+                                rompe y lo que sale de ella lo llevará a un viaje que lo convertirá en héroe. ¿Podrá
+                                Eragon tomar la responsabilidad de los legendarios jinetes de dragones? La esperanza del
+                                Imperio descansa en sus manos...</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m4').close()">Ok!</button>
+                            <a href="./assets/PDF/Eragon - Christopher Paolini.pdf"
+                                download="Eragon - Christopher Paolini.pdf"><button id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m4').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+        <article class="tile">
+            <li class="item-d">
+                <div class="latest-box">
+                    <div class="latest-b-img">
+                        <img src="https://lelibros.online/uploads/2017/02/descargar-libro-grandes-ideas-de-la-ciencia-en-pdf-epub-mobi-o-leer-online.jpg"
+                            width="210px" height="290px" title="El Retorno de la Sombra">
+                        <!--Libros-->
+                    </div>
+                    <div class="latest-b-text">
+                        <strong></strong>
+                        <p>Grandes Ideas de la Ciencia</p>
+                        <p>Isaac Asimov</p>
+                        <p>83</p>
+                        <dialog id="m5">
+                            <h2>Sinopsis</h2>
+                            <p align="center">El interés por la divulgación de los principios científicos lleva a Isaac
+                                Asimov a analizar en «Grandes ideas de la ciencia» las hipótesis y descubrimientos que
+                                destacados personajes llevaron a cabo a lo largo de la historia, y que hicieron posible
+                                la evolución de sus respectivos ámbitos de conocimiento: Tales y Pitágoras en las
+                                matemáticas, Hipócrates en la medicina, Linneo y Darwin en la biología, Galileo, Russell
+                                y Wöhler en la astronomía, Faraday, Rumford y Planck en el dominio de la física, son
+                                algunos de los casos que el autor utiliza para realizar un ameno recorrido por la
+                                evolución del saber científico.</p>
+                            <button class="zmdi zmdi-thumb-up" id="close"
+                                onclick="document.getElementById('m5').close()">Ok!</button>
+                            <a href="./assets/PDF/Grandes Ideas de la Ciencia - Isaac Asimov.pdf"
+                                download="Grandes Ideas de la Ciencia - Isaac Asimov.pdf"><button
+                                    id="close">Descargar</button></a>
+                        </dialog>
+                        <button id="show" onclick="document.getElementById('m5').showModal()">Mostrar</button>
+                    </div>
+                </div>
+            </li>
+        </article>
+
+
+        <!--Libros-->
+        <div class="modal fade" tabindex="-1" role="dialog" id="ModalHelp">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title text-center all-tittles">ayuda del sistema</h4>
+                    </div>
+                    <div class="modal-body">
+                        Si gustas reportar un error o sugerir una nueva copia de tu libro, de igual forma que subir un
+                        articulo tuyo como donacion manda mensaje al correo sisbiblomex@gmail.com
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i
+                                class="zmdi zmdi-thumb-up"></i> &nbsp; De acuerdo</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="footer full-reset">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-6">
+                        <h4 class="all-tittles">Acerca de</h4>
+                        <p>
+                            Bienvenido al catálogo, selecciona una categoría de la lista para empezar, si deseas buscar
+                            un libro por nombre o título has click en el icono que se encuentra en la barra superior.
+                    </div>
+                    <div class="col-xs-12 col-sm-6">
+                        <h4 class="all-tittles">Desarrollador</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="zmdi zmdi-check zmdi-hc-fw"></i>&nbsp; Roberto Daniel Saavedra Caballero <i
+                                    class="zmdi zmdi-facebook zmdi-hc-fw footer-social"></i><i
+                                    class="zmdi zmdi-twitter zmdi-hc-fw footer-social"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright full-reset all-tittles">© 2022-2023</div>
+        </footer>
+    </div>
+</body>
+
+</html>
